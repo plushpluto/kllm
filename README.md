@@ -14,7 +14,6 @@ Leveraging the power of the kernel, KLLM ensures that AI functionalities are dee
 
 ### On-Device LMs
 ![](https://github.com/plushpluto/kllm/blob/main/on-device.svg)
-
 KLLM focuses on running AI models and applications directly on personal devices such as laptops, smartphones, or edge devices, rather than relying on cloud-based services. This local integration brings several transformative benefits:
 
 - **Privacy**: Ensuring that sensitive data never leaves the device, protecting user privacy and reducing the risk of data breaches. Personal information and user interactions are processed and stored within the device, eliminating the need to transmit data to external servers.
@@ -23,7 +22,7 @@ KLLM focuses on running AI models and applications directly on personal devices 
 - **System Reliability**: Reducing dependency on internet connectivity and cloud services improves the reliability and availability of AI applications. KLLM ensures that AI functionalities continue to operate seamlessly even in offline or low-connectivity environments. Guardrails are implemented to prevent AI models from performing unintended actions, ensuring safe and reliable behavior.
 
 ### Energy Efficient LMs
-
+![](https://github.com/plushpluto/kllm/blob/main/energy%20efficient.png)
 KLLM is designed with energy efficiency as a core principle. The framework optimizes the use of system resources to deliver high performance while minimizing power consumption. Key strategies include:
 
 - **Resource Allocation**: Intelligent allocation of processing power and memory to balance performance and energy use.
@@ -31,7 +30,7 @@ KLLM is designed with energy efficiency as a core principle. The framework optim
 - **Power-Aware Algorithms**: Implementing algorithms that reduce unnecessary computations and focus on energy-saving techniques. These include compression techniques to reduce the size of AI models and data, enabling efficient storage and processing on resource-constrained devices.
 
 ### Pseudo-Level Kernel Layering
-
+![](https://github.com/plushpluto/kllm/blob/main/peudo-level.svg)
 KLLM implements pseudo-level layering techniques, which provide a more modular and flexible kernel architecture. This approach offers several advantages:
 
 - **Modularity**: Breaking down the kernel into smaller, manageable layers allows for easier updates and maintenance. Each layer can be developed, tested, and updated independently.
@@ -39,7 +38,7 @@ KLLM implements pseudo-level layering techniques, which provide a more modular a
 - **Scalability**: Pseudo-level layering supports the scaling of the kernel to accommodate different device types and performance requirements.
 
 ### Small Language Models for Device Understanding
-
+![](https://github.com/plushpluto/kllm/blob/main/slm.png)
 KLLM includes smaller, optimized language models (Small LMs) tailored for specific device functionalities. These models enhance the device's ability to understand and respond to user commands efficiently:
 
 - **Compact Models**: Smaller models require less computational power and memory, making them suitable for resource-constrained devices. Compression techniques are employed to maintain model efficiency without sacrificing performance.
@@ -47,7 +46,7 @@ KLLM includes smaller, optimized language models (Small LMs) tailored for specif
 - **On-Demand Loading**: Loading only the necessary models when required conserves resources and enhances performance.
 
 ### Cognitive Re-modelling of Mobile OS
-
+![](https://github.com/plushpluto/kllm/blob/main/cognitive%20remodelling.png)
 By integrating cognitive capabilities directly into the mobile operating system, KLLM enables smarter, more intuitive interactions between users and their devices:
 
 - **Context-Aware Interactions**: The OS can understand and anticipate user needs based on context, providing proactive assistance.
@@ -56,7 +55,7 @@ By integrating cognitive capabilities directly into the mobile operating system,
 - **Safeguarding and Guardrails**: Implementing safeguarding mechanisms and operational guardrails ensures that AI components act within predefined safe boundaries, maintaining system integrity and user trust.
 
 ### Finite-State Machine (FSM)
-
+![](https://github.com/plushpluto/kllm/blob/main/fsm.png)
 KLLM utilizes a robust finite-state machine architecture to manage the states and transitions within the kernel:
 
 - **State Management**: FSM ensures reliable and predictable behavior of AI components by clearly defining states and transitions.
@@ -64,7 +63,7 @@ KLLM utilizes a robust finite-state machine architecture to manage the states an
 - **Scalability**: The FSM architecture supports complex state management requirements, making it suitable for advanced AI functionalities.
 
 ### Sentinel AI
-
+![](https://github.com/plushpluto/kllm/blob/main/sentinal-ai.png)
 Sentinel AI is an advanced monitoring and security feature integrated within KLLM. It provides real-time monitoring and protection for AI models and applications:
 
 - **Real-Time Monitoring**: Continuously tracks the performance and behavior of AI models, ensuring they operate within expected parameters.
