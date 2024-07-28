@@ -4,7 +4,7 @@ Welcome to KLLM, an advanced project focused on core kernel AI development, inte
 
 ## Overview
 
-KLLM stands for Kernel-Level Language Model, a cutting-edge framework designed to inject large language models directly at the kernel level. This project aims to revolutionize the integration of AI within the core operating system, providing seamless and energy-efficient performance for on-device applications.
+KLLM stands for Kernel-Level Language Model, a cutting-edge framework designed to inject language models directly at the kernel level. This project aims to revolutionize the integration of AI within the core operating system, providing seamless and energy-efficient performance for on-device applications.
 
 ## Features
 
