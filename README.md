@@ -157,15 +157,15 @@ The "Task, Behavior, Act" framework is a cornerstone of KLLM, guiding how AI mod
 
 KLLM is designed to be compatible with a wide range of devices, ensuring versatility and broad applicability. Suitable devices include:
 
-- **Laptops and Desktops**: Personal computers with sufficient processing power and memory to run AI models locally.
-- **Smartphones**: Mobile devices that benefit from on-device AI for enhanced functionality, personalization, and offline capabilities.
-- **Tablets**: Portable devices that can leverage local AI for improved user interactions and application performance.
-- **Smartwatches**: Wearable devices that utilize small language models for voice commands, notifications, and personalized assistance.
-- **Smart Home Devices**: IoT devices such as smart speakers, home assistants, and connected appliances that use AI for automation, control, and interaction.
-- **Edge Devices**: Computing devices deployed at the edge of the network, including gateways, routers, and local servers, which run AI models to process data locally and reduce latency.
-- **Robotics and Cyber-Physical Systems**: In-vehicle systems that employ AI for navigation, driver assistance, and infotainment features, Unmanned aerial/ground vehicles that use AI for autonomous navigation, object detection, and environmental sensing.
-- **Healthcare Devices**: Medical devices and wearables that use AI to monitor health metrics, provide diagnostics, and offer personalized health recommendations.
-- **Industrial Equipment**: Machinery and equipment in manufacturing and other industries that leverage AI for predictive maintenance, process optimization, and automation.
+- **Laptops and Desktops**: Computers with sufficient power to run AI models locally.
+- **Smartphones**: Mobile devices benefiting from on-device AI for enhanced functionality and offline capabilities.
+- **Tablets**: Portable devices leveraging local AI for better interactions and performance.
+- **Smartwatches**: Wearables using small language models for voice commands and notifications.
+- **Smart Home Devices**: IoT devices like smart speakers and home assistants using AI for automation and control.
+- **Edge Devices**: Computing devices at the network edge, running AI models locally to reduce latency.
+- **Robotics and Cyber-Physical Systems**: AI-powered systems for navigation, assistance, and sensing in vehicles and drones.
+- **Healthcare Devices**: Medical devices and wearables using AI for health monitoring and personalized recommendations.
+- **Industrial Equipment**: Machinery using AI for predictive maintenance, process optimization, and automation.
 
 ## Programming Languages
 
