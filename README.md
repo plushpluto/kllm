@@ -13,6 +13,7 @@ KLLM stands for Kernel-Level Language Model, a cutting-edge framework designed t
 Leveraging the power of the kernel, KLLM ensures that AI functionalities are deeply integrated within the system. This deep integration allows for faster and more efficient processing of AI tasks, as the core functionalities are embedded at the lowest level of the operating system. This approach minimizes latency, enhances security, and provides a stable foundation for running complex AI models. Additionally, robust encoding methods are used to maintain data integrity and quick access.
 
 ### On-Device LMs
+![]https://github.com/plushpluto/kllm/blob/main/on-device.svg
 
 KLLM focuses on running AI models and applications directly on personal devices such as laptops, smartphones, or edge devices, rather than relying on cloud-based services. This local integration brings several transformative benefits:
 
