@@ -166,6 +166,8 @@ KLLM is designed to be compatible with a wide range of devices, ensuring versati
 - **Robotics and Cyber-Physical Systems**: AI-powered systems for navigation, assistance, and sensing in vehicles and drones.
 - **Healthcare Devices**: Medical devices and wearables using AI for health monitoring and personalized recommendations.
 - **Industrial Equipment**: Machinery using AI for predictive maintenance, process optimization, and automation.
+- **Embedded Systems**: Specialized devices with integrated AI for specific functions, requiring low power and high efficiency, such as microcontrollers and dedicated hardware accelerators.
+
 
 ## Programming Languages
 
