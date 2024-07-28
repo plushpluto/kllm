@@ -1,7 +1,7 @@
 # KLLM: Kernel-Level Language Model
 
-- ![Wiki](https://github.com/plushpluto/kllm/wiki)
-- ![Ideas](https://github.com/plushpluto/kllm/discussions/2)
+- [Wiki](https://github.com/plushpluto/kllm/wiki)
+- [Ideas](https://github.com/plushpluto/kllm/discussions/2)
 
 Welcome to KLLM, an advanced project focused on core kernel AI development, integrating on-device language models (LMs) for efficient and powerful AI capabilities.
 
