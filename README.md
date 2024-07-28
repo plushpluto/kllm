@@ -207,22 +207,6 @@ KLLM is released under the MIT License, a permissive free software license that 
 - **Attribution**: The license requires that the original copyright notice and permission notice be included in all copies or substantial portions of the software.
 - **Liability**: The software is provided "as is," without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement.
 
-## Documentation
-
-Comprehensive documentation is available in the `docs` directory. You can find detailed instructions on module usage, API references, and integration guidelines.
-
-## Contributing
-
-We welcome contributions from the community. To contribute, please fork the repository, create a feature branch, and submit a pull request. Ensure that your code adheres to the project's coding standards and includes appropriate tests.
-
 ## License
 
 KLLM is licensed under the MIT License. See the `LICENSE` file for more details.
-
-## Acknowledgments
-
-We would like to thank all contributors and the open-source community for their valuable input and support.
-
----
-
-Feel free to customize this README file further to suit your specific project requirements.
