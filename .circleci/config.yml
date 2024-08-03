@@ -1,43 +1,50 @@
 version: 2.1
 
+executors:
+  yocto-executor:
+    docker:
+      - image: circleci/python:3.8
+
 jobs:
   build:
-    docker:
-      - image: ubuntu:20.04
-
+    executor: yocto-executor
     steps:
       - checkout
-
-      # Install necessary dependencies
       - run:
-          name: Install dependencies
+          name: Install Dependencies
           command: |
-            apt-get update && apt-get install -y qemu-system-x86 qemu-kvm curl
-
-      # Download and prepare Ubuntu Core image
+            sudo apt-get update
+            sudo apt-get install -y gawk wget git-core diffstat unzip texinfo gcc-multilib build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping libsdl1.2-dev xterm
       - run:
-          name: Download Ubuntu Core
+          name: Setup Yocto Project
           command: |
-            curl -O http://cdimage.ubuntu.com/ubuntu-core/20/stable/current/ubuntu-core-20-amd64.img.xz
-            unxz ubuntu-core-20-amd64.img.xz
-
-      # Run QEMU with Ubuntu Core image
+            git clone git://git.yoctoproject.org/poky.git
+            cd poky
+            git checkout -b zeus origin/zeus
+            source oe-init-build-env
+      - run:
+          name: Configure Yocto Build
+          command: |
+            cd poky
+            source oe-init-build-env
+            bitbake core-image-minimal
       - run:
           name: Run QEMU
           command: |
-            qemu-system-x86_64 -nographic -smp 2 -m 1024 -hda ubuntu-core-20-amd64.img &
-            sleep 30 # wait for QEMU to start
-
-      # Run your tests
+            cd poky
+            source oe-init-build-env
+            runqemu qemux86-64
       - run:
-          name: Run tests
+          name: Run Tests
           command: |
-            # Add commands to run your tests here, for example:
-            echo "Running tests..."
+            cd poky
+            source oe-init-build-env
+            # Example test script, replace with your actual test commands
+            ./run-tests.sh
 
-      # Collect test results and update dashboard
-      - store_test_results:
-          path: test-results
-      - store_artifacts:
-          path: test-results
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build
 
