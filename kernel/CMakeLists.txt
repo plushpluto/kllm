@@ -18,7 +18,7 @@ add_subdirectory(${CMAKE_SOURCE_DIR}/../externals/llama.cpp)
 # Add source files for the kernel library
 add_library(kllm_kernel_lib STATIC
     src/model_manager.cpp
-    src/resource_allocator.cpp
+    src/pseudo_kernel.cpp
 )
 
 # Include directories
