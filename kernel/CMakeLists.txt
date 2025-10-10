@@ -26,6 +26,11 @@ target_include_directories(kllm_kernel_lib PUBLIC
     ${PROJECT_SOURCE_DIR}/../sdk/include
 )
 
-# Add executables for testing or standalone components
-add_executable(kllm_main main.cpp)
-target_link_libraries(kllm_main PRIVATE kllm_kernel_lib llama ggml common)
+# Add executables
+# The client application
+add_executable(kllm_client main.cpp)
+target_link_libraries(kllm_client PRIVATE) # No direct library links needed, it's a simple socket client
+
+# The daemon application
+add_executable(kllm_daemon src/daemon_main.cpp)
+target_link_libraries(kllm_daemon PRIVATE kllm_kernel_lib llama ggml common)
